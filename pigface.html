@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Face</title>
+    <style>
+        /* Pig's head */
+        .pig-head {
+            width: 200px;
+            height: 200px;
+            background-color: #ffcccb;
+            border-radius: 50%;
+            position: relative;
+            margin: 50px auto;
+        }
+
+        .leftear{
+            width: 40px;
+            height: 60px;
+            background-color: #ffcccb;
+            border-radius: 50%;
+            position: absolute;
+            rotate: 150deg;
+        }
+        .rightear{
+            width: 40px;
+            height: 60px;
+            background-color: #ffcccb;
+            border-radius: 50%;
+            position: absolute;
+            right: 0px;
+            rotate: 40deg;
+        }
+
+        /* Pig's eyes */
+        .eye {
+            width: 40px;
+            height: 60px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .left-eye {
+            left: 35px;
+            top: 40px;
+        }
+
+        .right-eye {
+            right: 35px;
+            top: 40px;
+        }
+
+        /* Pupils */
+        .pupil {
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+        }
+
+        .left-pupil {
+            left: 15px;
+        }
+
+        .right-pupil {
+            right: 15px;
+        }
+
+        /* Pig's snout */
+        .snout {
+            width: 80px;
+            height: 60px;
+            background-color: #ff9966;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 10px;
+            left: 60px;
+        }
+        .hole {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+        }
+        .leftsnout {
+            left: 15px;
+        }
+
+        .rightsnout {
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pig-head">
+        <div class="leftear"></div>
+        <div class="rightear"></div>
+        <div class="eye left-eye">
+            <div class="pupil left-pupil"></div>
+        </div>
+        <div class="eye right-eye">
+            <div class="pupil right-pupil"></div>
+        </div>
+        <div class="snout"><div class="hole rightsnout"></div><div class="hole leftsnout"></div></div>
+    </div>
+</body>
+</html>
